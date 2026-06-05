@@ -86,17 +86,16 @@ class _ProfileScreenState extends State<ProfileScreen> {
     );
   }
 
-  // State change garni function (ElevatedButton thichda chalxa)
+  // State change garni function
   void updateEmployeeSalary() {
     setState(() {
-      // Employee class ko method call gareko
       employeeInfo.promoteEmployee(5000.0);
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    // Day 5: Scaffold provides structural layout (AppBar, Body)
+    // Day 5: Scaffold provides structural layout
     return Scaffold(
       appBar: AppBar(
         title: const Text('Weekly Assessment 1: Profile & OOP'),
@@ -121,7 +120,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
               child: Column(
                 // Day 6: Column (Vertical alignment)
                 children: [
-                  // Day 6: Image (Placeholder network image use gareko)
+                  // Day 6: Image
                   const CircleAvatar(
                     radius: 50,
                     backgroundImage: NetworkImage('https://picsum.photos/200'),
